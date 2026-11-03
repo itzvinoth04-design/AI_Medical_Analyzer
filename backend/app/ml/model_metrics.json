@@ -1,0 +1,511 @@
+{
+  "model_type": "Random Forest Classifier (Ensemble Supervised Learning)",
+  "training_samples": 1440,
+  "testing_samples": 480,
+  "overall_accuracy": 99.17,
+  "macro_avg_f1": 99.18,
+  "weighted_avg_f1": 99.18,
+  "classification_report": {
+    "COND_ACS_CARDIAC": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "COND_ACUTE_SINUSITIS": {
+      "precision": 1.0,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9655172413793104,
+      "support": 30.0
+    },
+    "COND_ACUTE_STROKE": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "COND_ALLERGIC_DERM": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "COND_ANAPHYLAXIS": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "COND_ARTHRITIS_SPRAIN": {
+      "precision": 1.0,
+      "recall": 0.9666666666666667,
+      "f1-score": 0.983050847457627,
+      "support": 30.0
+    },
+    "COND_ASTHMA_BRONCHITIS": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "COND_DEHYDRATION": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "COND_GASTROENTERITIS": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "COND_GERD": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "COND_LUMBAR_STRAIN": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "COND_MIGRAINE": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "COND_TENSION_HA": {
+      "precision": 0.8823529411764706,
+      "recall": 1.0,
+      "f1-score": 0.9375,
+      "support": 30.0
+    },
+    "COND_URI_COLD": {
+      "precision": 1.0,
+      "recall": 0.9666666666666667,
+      "f1-score": 0.983050847457627,
+      "support": 30.0
+    },
+    "COND_UTI": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "COND_VIRAL_FEVER": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "accuracy": 0.9916666666666667,
+    "macro avg": {
+      "precision": 0.9926470588235294,
+      "recall": 0.9916666666666667,
+      "f1-score": 0.9918199335184104,
+      "support": 480.0
+    },
+    "weighted avg": {
+      "precision": 0.9926470588235294,
+      "recall": 0.9916666666666667,
+      "f1-score": 0.9918199335184104,
+      "support": 480.0
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "COND_TENSION_HA",
+      "COND_DEHYDRATION",
+      "COND_MIGRAINE",
+      "COND_VIRAL_FEVER",
+      "COND_URI_COLD",
+      "COND_ACUTE_SINUSITIS",
+      "COND_GASTROENTERITIS",
+      "COND_GERD",
+      "COND_ARTHRITIS_SPRAIN",
+      "COND_LUMBAR_STRAIN",
+      "COND_UTI",
+      "COND_ASTHMA_BRONCHITIS",
+      "COND_ALLERGIC_DERM",
+      "COND_ACUTE_STROKE",
+      "COND_ACS_CARDIAC",
+      "COND_ANAPHYLAXIS"
+    ],
+    "matrix": [
+      [
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        29,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        28,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        29,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        30,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        30,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        30,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        30,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        30
+      ]
+    ]
+  },
+  "top_feature_importances": [
+    {
+      "symptom_code": "HEADACHE",
+      "symptom_name": "Headache",
+      "importance": 0.0731
+    },
+    {
+      "symptom_code": "SINUS_PRESS",
+      "symptom_name": "Facial or sinus pressure around eyes",
+      "importance": 0.0593
+    },
+    {
+      "symptom_code": "ACID_REFLUX",
+      "symptom_name": "Heartburn or acid reflux",
+      "importance": 0.0585
+    },
+    {
+      "symptom_code": "BACK_PAIN",
+      "symptom_name": "Back pain",
+      "importance": 0.0572
+    },
+    {
+      "symptom_code": "JOINT_PAIN",
+      "symptom_name": "Joint pain",
+      "importance": 0.0543
+    },
+    {
+      "symptom_code": "FEV",
+      "symptom_name": "Fever",
+      "importance": 0.0533
+    },
+    {
+      "symptom_code": "CHEST_PAIN_SEV",
+      "symptom_name": "Crushing chest pain radiating to arm or jaw",
+      "importance": 0.0523
+    },
+    {
+      "symptom_code": "ITCH",
+      "symptom_name": "Itching",
+      "importance": 0.0501
+    },
+    {
+      "symptom_code": "SUD_WEAK",
+      "symptom_name": "Sudden one-sided weakness",
+      "importance": 0.0487
+    },
+    {
+      "symptom_code": "PAIN_URINE",
+      "symptom_name": "Burning or painful urination",
+      "importance": 0.0478
+    },
+    {
+      "symptom_code": "ANAPHYLAXIS_SWELL",
+      "symptom_name": "Rapid swelling of lips, tongue or face",
+      "importance": 0.0411
+    },
+    {
+      "symptom_code": "WHEEZE",
+      "symptom_name": "Wheezing whistling sound",
+      "importance": 0.0373
+    },
+    {
+      "symptom_code": "NASAL_BLOCK",
+      "symptom_name": "Nasal congestion or blockage",
+      "importance": 0.0292
+    },
+    {
+      "symptom_code": "COUGH",
+      "symptom_name": "Cough",
+      "importance": 0.0234
+    },
+    {
+      "symptom_code": "FAT",
+      "symptom_name": "Fatigue",
+      "importance": 0.0212
+    }
+  ],
+  "dataset_limitations": [
+    "Dataset synthesizes clinical guideline presentations and symptom frequency matrices.",
+    "Trained for academic triage demonstration; not a substitute for clinical diagnostics.",
+    "Real clinical presentations feature complex multi-morbidities and atypical presentations not fully covered by synthetic cohorts."
+  ]
+}

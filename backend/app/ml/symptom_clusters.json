@@ -1,0 +1,277 @@
+[
+  {
+    "cluster_id": 0,
+    "cluster_name": "Head, Neurological & Sensory Syndromes",
+    "symptoms_count": 9,
+    "symptoms": [
+      {
+        "code": "DIZZ",
+        "name": "Dizziness",
+        "category": "Head and neurological symptoms"
+      },
+      {
+        "code": "VIS_CHANGE",
+        "name": "Vision changes or blurriness",
+        "category": "Head and neurological symptoms"
+      },
+      {
+        "code": "CHEST_DISCOMFORT",
+        "name": "Mild chest tightness or discomfort",
+        "category": "Cardiovascular symptoms"
+      },
+      {
+        "code": "STOM_PAIN",
+        "name": "Stomach or abdominal pain",
+        "category": "Digestive symptoms"
+      },
+      {
+        "code": "NAUSEA",
+        "name": "Nausea",
+        "category": "Digestive symptoms"
+      },
+      {
+        "code": "VOMIT",
+        "name": "Vomiting",
+        "category": "Digestive symptoms"
+      },
+      {
+        "code": "DIARRHEA",
+        "name": "Diarrhea",
+        "category": "Digestive symptoms"
+      },
+      {
+        "code": "ACID_REFLUX",
+        "name": "Heartburn or acid reflux",
+        "category": "Digestive symptoms"
+      },
+      {
+        "code": "BLOAT",
+        "name": "Abdominal bloating or gas",
+        "category": "Digestive symptoms"
+      }
+    ]
+  },
+  {
+    "cluster_id": 1,
+    "cluster_name": "Respiratory & Systemic Infectious Cluster",
+    "symptoms_count": 32,
+    "symptoms": [
+      {
+        "code": "FEV",
+        "name": "Fever",
+        "category": "General symptoms"
+      },
+      {
+        "code": "FAT",
+        "name": "Fatigue",
+        "category": "General symptoms"
+      },
+      {
+        "code": "BOD_PAIN",
+        "name": "Body pain",
+        "category": "General symptoms"
+      },
+      {
+        "code": "CHL",
+        "name": "Chills and shivering",
+        "category": "General symptoms"
+      },
+      {
+        "code": "WGT_LOSS",
+        "name": "Unexplained weight loss",
+        "category": "General symptoms"
+      },
+      {
+        "code": "WEAK",
+        "name": "Generalized weakness",
+        "category": "General symptoms"
+      },
+      {
+        "code": "THUND_HEAD",
+        "name": "Sudden severe explosive headache",
+        "category": "Head and neurological symptoms"
+      },
+      {
+        "code": "CONFUSION",
+        "name": "Acute confusion or altered consciousness",
+        "category": "Head and neurological symptoms"
+      },
+      {
+        "code": "NECK_STIFF",
+        "name": "Severe stiff neck with high fever",
+        "category": "Head and neurological symptoms"
+      },
+      {
+        "code": "COUGH",
+        "name": "Cough",
+        "category": "Respiratory symptoms"
+      },
+      {
+        "code": "SORE_THROAT",
+        "name": "Sore throat",
+        "category": "Respiratory symptoms"
+      },
+      {
+        "code": "SHORT_BREATH",
+        "name": "Shortness of breath on exertion",
+        "category": "Respiratory symptoms"
+      },
+      {
+        "code": "WHEEZE",
+        "name": "Wheezing whistling sound",
+        "category": "Respiratory symptoms"
+      },
+      {
+        "code": "CHEST_CONGEST",
+        "name": "Chest congestion",
+        "category": "Respiratory symptoms"
+      },
+      {
+        "code": "CHEST_PAIN_SEV",
+        "name": "Crushing chest pain radiating to arm or jaw",
+        "category": "Cardiovascular symptoms"
+      },
+      {
+        "code": "PALP",
+        "name": "Palpitations or rapid heartbeat",
+        "category": "Cardiovascular symptoms"
+      },
+      {
+        "code": "ANKLE_SWELL",
+        "name": "Swelling in ankles and feet",
+        "category": "Cardiovascular symptoms"
+      },
+      {
+        "code": "CONSTIP",
+        "name": "Constipation",
+        "category": "Digestive symptoms"
+      },
+      {
+        "code": "SEV_RLQ_PAIN",
+        "name": "Severe sharp right lower abdominal pain",
+        "category": "Digestive symptoms"
+      },
+      {
+        "code": "SKIN_RASH",
+        "name": "Skin rash",
+        "category": "Skin symptoms"
+      },
+      {
+        "code": "ITCH",
+        "name": "Itching",
+        "category": "Skin symptoms"
+      },
+      {
+        "code": "JOINT_PAIN",
+        "name": "Joint pain",
+        "category": "Musculoskeletal symptoms"
+      },
+      {
+        "code": "JOINT_SWELL",
+        "name": "Joint swelling and warmth",
+        "category": "Musculoskeletal symptoms"
+      },
+      {
+        "code": "BACK_PAIN",
+        "name": "Back pain",
+        "category": "Musculoskeletal symptoms"
+      },
+      {
+        "code": "MUSCLE_STIFF",
+        "name": "Muscle stiffness",
+        "category": "Musculoskeletal symptoms"
+      },
+      {
+        "code": "RUNNY_NOSE",
+        "name": "Runny nose or nasal discharge",
+        "category": "ENT symptoms"
+      },
+      {
+        "code": "NASAL_BLOCK",
+        "name": "Nasal congestion or blockage",
+        "category": "ENT symptoms"
+      },
+      {
+        "code": "EAR_PAIN",
+        "name": "Earache",
+        "category": "ENT symptoms"
+      },
+      {
+        "code": "SINUS_PRESS",
+        "name": "Facial or sinus pressure around eyes",
+        "category": "ENT symptoms"
+      },
+      {
+        "code": "PAIN_URINE",
+        "name": "Burning or painful urination",
+        "category": "Urinary symptoms"
+      },
+      {
+        "code": "FREQ_URINE",
+        "name": "Frequent urination",
+        "category": "Urinary symptoms"
+      },
+      {
+        "code": "FLANK_PAIN",
+        "name": "Lower back flank pain",
+        "category": "Urinary symptoms"
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "cluster_name": "Digestive & Gastrointestinal Patterns",
+    "symptoms_count": 3,
+    "symptoms": [
+      {
+        "code": "SUD_WEAK",
+        "name": "Sudden one-sided weakness",
+        "category": "Head and neurological symptoms"
+      },
+      {
+        "code": "FACE_DROP",
+        "name": "Sudden facial drooping",
+        "category": "Head and neurological symptoms"
+      },
+      {
+        "code": "SPEECH_DIFF",
+        "name": "Slurred speech or difficulty speaking",
+        "category": "Head and neurological symptoms"
+      }
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "cluster_name": "Musculoskeletal & Articular Syndromes",
+    "symptoms_count": 3,
+    "symptoms": [
+      {
+        "code": "SEV_BREATH_DIFF",
+        "name": "Severe resting breathlessness",
+        "category": "Respiratory symptoms"
+      },
+      {
+        "code": "HIVES",
+        "name": "Raised red itchy wheals (hives)",
+        "category": "Skin symptoms"
+      },
+      {
+        "code": "ANAPHYLAXIS_SWELL",
+        "name": "Rapid swelling of lips, tongue or face",
+        "category": "Skin symptoms"
+      }
+    ]
+  },
+  {
+    "cluster_id": 4,
+    "cluster_name": "Critical Emergency & Vascular Signs",
+    "symptoms_count": 1,
+    "symptoms": [
+      {
+        "code": "HEADACHE",
+        "name": "Headache",
+        "category": "Head and neurological symptoms"
+      }
+    ]
+  }
+]
