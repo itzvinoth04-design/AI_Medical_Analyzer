@@ -62,52 +62,30 @@ const RegisterPage = () => {
               </div>
             </div>
 
-            <div className="space-y-2">
+            <div>
               <h3 className="text-xl font-extrabold tracking-tight leading-snug">
-                Private & Secure Patient Profile
+                Patient Account Setup
               </h3>
-              <p className="text-xs text-surface-muted/80 leading-relaxed">
-                Create an individual patient account to access personal health dashboards, store clinical consultation histories, and securely download certified PDF reports.
-              </p>
-            </div>
-
-            {/* Privacy Safeguards */}
-            <div className="space-y-2.5 pt-2 border-t border-white/10 text-xs">
-              <div className="flex items-center gap-1.5 text-accent font-bold text-[11px] uppercase tracking-wider">
-                <ShieldCheck className="w-4 h-4" />
-                <span>Patient Privacy Guarantee</span>
+              <div className="mt-4 flex flex-wrap gap-2 text-[11px] font-semibold">
+                <span className="px-3 py-1 rounded-lg bg-white/10 text-accent border border-white/10">Private Records</span>
+                <span className="px-3 py-1 rounded-lg bg-white/10 text-secondary-light border border-white/10">Personal History</span>
+                <span className="px-3 py-1 rounded-lg bg-white/10 text-white border border-white/10">Certified PDF Reports</span>
               </div>
-              <ul className="space-y-1.5 text-[11px] text-surface-muted/90">
-                <li className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-accent shrink-0" />
-                  <span>Individual segregated patient dashboards</span>
-                </li>
-                <li className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-accent shrink-0" />
-                  <span>Bcrypt password hashing & JWT encryption</span>
-                </li>
-                <li className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-accent shrink-0" />
-                  <span>Zero unauthorized data sharing</span>
-                </li>
-              </ul>
             </div>
           </div>
 
           <div className="relative z-10 pt-6 border-t border-white/10 text-[11px] text-surface-muted/60 space-y-1">
-            <div>Rajalakshmi Engineering College (REC)</div>
-            <div className="text-white font-semibold">Artificial Intelligence Mini-Project</div>
-            <div className="text-accent">Vinoth S (240701592)</div>
+            <strong className="text-white block font-semibold">Rajalakshmi Engineering College (REC)</strong>
+            <div className="text-accent">Vinoth S (240701592) & Team</div>
           </div>
         </div>
 
         {/* Right Form Card (7 cols) */}
         <div className="md:col-span-7 p-8 sm:p-10 flex flex-col justify-center space-y-5">
           
-          <div className="space-y-1">
-            <span className="text-[11px] font-bold text-secondary uppercase tracking-wider">New Patient Onboarding</span>
-            <h2 className="text-2xl font-extrabold text-primary tracking-tight">Create Your Account</h2>
-            <p className="text-xs text-primary/60">Fill in your clinical baseline to calibrate AI triage calculations.</p>
+          <div>
+            <h2 className="text-2xl font-extrabold text-primary tracking-tight">Create Account</h2>
+            <span className="text-[11px] font-bold text-accent uppercase tracking-wider">New Patient Intake Form</span>
           </div>
 
           {error && (

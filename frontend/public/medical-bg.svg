@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" fill="none">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="meshGrad1" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#20B2AA" stop-opacity="0.12" />
+      <stop offset="60%" stop-color="#247BA0" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#F4F8FB" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="meshGrad2" cx="100%" cy="100%" r="60%">
+      <stop offset="0%" stop-color="#0A2540" stop-opacity="0.08" />
+      <stop offset="50%" stop-color="#20B2AA" stop-opacity="0.03" />
+      <stop offset="100%" stop-color="#F4F8FB" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="meshGrad3" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#2E9D72" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#F4F8FB" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Subtle Dot Pattern -->
+    <pattern id="medicalGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1" fill="#247BA0" fill-opacity="0.12" />
+      <!-- Subtle Cross at intersection -->
+      <path d="M 0 5 L 0 0 L 5 0 M 35 0 L 40 0 L 40 5 M 40 35 L 40 40 L 35 40 M 5 40 L 0 40 L 0 35" stroke="#20B2AA" stroke-width="0.75" stroke-opacity="0.1" />
+    </pattern>
+
+    <!-- Subtle Hexagon Pattern -->
+    <pattern id="hexPattern" width="120" height="104" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 120 34.6 L 120 104 L 60 138.6 L 0 104 L 0 34.6 Z" fill="none" stroke="#247BA0" stroke-width="0.8" stroke-opacity="0.04" />
+      <circle cx="60" cy="0" r="2" fill="#20B2AA" fill-opacity="0.15" />
+      <circle cx="120" cy="34.6" r="2" fill="#20B2AA" fill-opacity="0.15" />
+    </pattern>
+  </defs>
+
+  <!-- Base Clean Medical Tint -->
+  <rect width="100%" height="100%" fill="#F6FAF9" />
+
+  <!-- Ambient Fluid Gradients -->
+  <rect width="100%" height="100%" fill="url(#meshGrad1)" />
+  <rect width="100%" height="100%" fill="url(#meshGrad2)" />
+  <rect width="100%" height="100%" fill="url(#meshGrad3)" />
+
+  <!-- Grid Pattern Overlay -->
+  <rect width="100%" height="100%" fill="url(#medicalGrid)" />
+  <rect width="100%" height="100%" fill="url(#hexPattern)" opacity="0.8" />
+
+  <!-- Flowing Medical Waveforms / Heartbeat Pulse Line -->
+  <g opacity="0.35">
+    <!-- Heartbeat Trace 1 -->
+    <path d="M -100 240 Q 150 240, 280 240 L 305 240 L 315 210 L 325 285 L 340 160 L 355 260 L 368 230 L 380 240 L 440 240 Q 600 240, 800 220 T 1200 250 L 1220 250 L 1230 220 L 1240 280 L 1252 170 L 1265 265 L 1275 240 L 1550 240" fill="none" stroke="#20B2AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" />
+    
+    <!-- Smooth Sine Wave 2 -->
+    <path d="M -100 680 C 200 620, 400 740, 720 670 C 1040 600, 1200 730, 1550 660" fill="none" stroke="#247BA0" stroke-width="2.5" stroke-dasharray="6 8" opacity="0.3" />
+    
+    <!-- Medical Plus Crosses in background corners -->
+    <g transform="translate(180, 120)" fill="#20B2AA" opacity="0.18">
+      <rect x="-12" y="-4" width="24" height="8" rx="2" />
+      <rect x="-4" y="-12" width="8" height="24" rx="2" />
+    </g>
+    <g transform="translate(1320, 480)" fill="#247BA0" opacity="0.18">
+      <rect x="-14" y="-4" width="28" height="8" rx="2" />
+      <rect x="-4" y="-14" width="8" height="28" rx="2" />
+    </g>
+    <g transform="translate(80, 720)" fill="#20B2AA" opacity="0.15">
+      <rect x="-10" y="-3" width="20" height="6" rx="2" />
+      <rect x="-3" y="-10" width="6" height="20" rx="2" />
+    </g>
+    <g transform="translate(940, 140)" fill="#247BA0" opacity="0.15">
+      <rect x="-10" y="-3" width="20" height="6" rx="2" />
+      <rect x="-3" y="-10" width="6" height="20" rx="2" />
+    </g>
+  </g>
+</svg>

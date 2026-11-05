@@ -39,8 +39,7 @@ const PatientInfoFollowUpPage = () => {
       <div className="flex items-center justify-between border-b border-surface-muted pb-4">
         <div>
           <span className="text-xs font-bold text-accent uppercase tracking-wider">Step 2 of 3</span>
-          <h1 className="text-2xl font-extrabold text-primary tracking-tight">Clinical Details & Follow-Up Questions</h1>
-          <p className="text-xs text-primary/60 mt-0.5">Answer a few quick questions to help clarify your symptoms</p>
+          <h1 className="text-2xl font-extrabold text-primary tracking-tight">Follow-Up Questions</h1>
         </div>
         <div className="hidden sm:flex items-center gap-2 text-xs font-semibold">
           <span className="w-6 h-6 rounded-full bg-status-success text-white flex items-center justify-center text-xs">✓</span>
@@ -63,11 +62,8 @@ const PatientInfoFollowUpPage = () => {
             </div>
             <div>
               <h3 className="font-bold text-base text-primary">
-                Targeted Follow-Up Questions
+                Targeted Clinical Questions
               </h3>
-              <p className="text-xs text-primary/60 mt-0.5">
-                These questions help narrow down the cause and determine if specialist care is recommended.
-              </p>
             </div>
           </div>
 

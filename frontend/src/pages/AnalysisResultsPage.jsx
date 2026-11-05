@@ -186,9 +186,6 @@ const AnalysisResultsPage = () => {
       <div className="space-y-4">
         <div>
           <h3 className="text-lg font-bold text-primary">Possible Health Explanations</h3>
-          <p className="text-xs text-primary/60">
-            Ranked by knowledge-base compatibility score (this is an educational guide, not a formal diagnosis).
-          </p>
         </div>
 
         <div className="space-y-4">

@@ -77,6 +77,17 @@ class NLPEntityExtractor:
             }
 
         text_lower = text.lower()
+        # Phonetic & colloquial spelling normalization for clinical input
+        text_lower = re.sub(r"\bbreeth\b", "breath", text_lower)
+        text_lower = re.sub(r"\bbreth\b", "breath", text_lower)
+        text_lower = re.sub(r"\bharth\b", "heart", text_lower)
+        text_lower = re.sub(r"\bhart\b", "heart", text_lower)
+        text_lower = re.sub(r"\bstomack\b", "stomach", text_lower)
+        text_lower = re.sub(r"\bstomache\b", "stomach", text_lower)
+        text_lower = re.sub(r"\bhedache\b", "headache", text_lower)
+        text_lower = re.sub(r"\bheadacke\b", "headache", text_lower)
+        text_lower = re.sub(r"\bfeever\b", "fever", text_lower)
+
         words = re.findall(r"\b[\w'-]+\b", text_lower)
 
         # 1. Extract Duration

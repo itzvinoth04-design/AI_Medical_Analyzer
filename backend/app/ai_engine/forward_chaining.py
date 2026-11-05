@@ -44,7 +44,7 @@ class ForwardChainingEngine:
                     # If critical red flag fires, return immediate emergency override
                     if rule["code"] == "RULE_STROKE_FAST":
                         candidate_codes.add("COND_ACUTE_STROKE")
-                    elif rule["code"] == "RULE_CARDIAC_RED_FLAG":
+                    elif rule["code"] in ["RULE_CARDIAC_RED_FLAG", "RULE_CARDIAC_COMBO_ROUTE"]:
                         candidate_codes.add("COND_ACS_CARDIAC")
                     elif rule["code"] == "RULE_ANAPHYLAXIS_ALERT":
                         candidate_codes.add("COND_ANAPHYLAXIS")

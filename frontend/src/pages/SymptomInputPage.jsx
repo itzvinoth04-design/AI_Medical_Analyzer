@@ -227,11 +227,8 @@ const SymptomInputPage = () => {
             <span className="text-xs text-primary/50 font-semibold">Triage Intake</span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-primary tracking-tight mt-1">
-            Intelligent Medical Symptom Input
+            Symptom Assessment
           </h1>
-          <p className="text-xs text-primary/60 mt-0.5">
-            Describe symptoms naturally or navigate verified anatomical categories
-          </p>
         </div>
 
         {/* Visual Progress Stepper */}

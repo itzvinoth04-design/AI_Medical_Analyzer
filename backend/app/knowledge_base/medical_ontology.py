@@ -97,14 +97,14 @@ SYMPTOMS_DATA = [
     # Respiratory
     {"code": "COUGH", "name": "Cough", "category": "Respiratory symptoms", "body_part": "Throat/Chest", "is_red_flag": False, "default_weight": 2.0, "synonyms": "coughing,dry cough,wet cough,phlegm cough"},
     {"code": "SORE_THROAT", "name": "Sore throat", "category": "Respiratory symptoms", "body_part": "Throat", "is_red_flag": False, "default_weight": 2.0, "synonyms": "throat pain,throat irritation,pain swallowing"},
-    {"code": "SHORT_BREATH", "name": "Shortness of breath on exertion", "category": "Respiratory symptoms", "body_part": "Chest/Lungs", "is_red_flag": False, "default_weight": 3.0, "synonyms": "dyspnea,breathlessness,difficulty breathing on climbing"},
-    {"code": "SEV_BREATH_DIFF", "name": "Severe resting breathlessness", "category": "Respiratory symptoms", "body_part": "Chest/Lungs", "is_red_flag": True, "default_weight": 10.0, "synonyms": "gasping for air,struggling to breathe,cannot speak full sentences"},
+    {"code": "SHORT_BREATH", "name": "Shortness of breath on exertion", "category": "Respiratory symptoms", "body_part": "Chest/Lungs", "is_red_flag": False, "default_weight": 3.0, "synonyms": "dyspnea,breathlessness,difficulty breathing on climbing,breeth lock,breath lock,breath locked,breathing lock,breath blocked,short of breath,shortness of breath,trouble breathing,difficulty breathing,hard to breathe,cant breathe,can't breathe,loss of breath,breath shortness,heavy breathing,struggling to breathe"},
+    {"code": "SEV_BREATH_DIFF", "name": "Severe resting breathlessness", "category": "Respiratory symptoms", "body_part": "Chest/Lungs", "is_red_flag": True, "default_weight": 10.0, "synonyms": "gasping for air,struggling to breathe,cannot speak full sentences,severe breathlessness,unable to breathe,choking sensation,severe breath lock,acute shortness of breath"},
     {"code": "WHEEZE", "name": "Wheezing whistling sound", "category": "Respiratory symptoms", "body_part": "Lungs", "is_red_flag": False, "default_weight": 2.5, "synonyms": "chest whistling,asthma attack sound,bronchial wheeze"},
     {"code": "CHEST_CONGEST", "name": "Chest congestion", "category": "Respiratory symptoms", "body_part": "Chest", "is_red_flag": False, "default_weight": 2.0, "synonyms": "tight chest from mucus,phlegm in chest"},
 
     # Cardiovascular
-    {"code": "CHEST_PAIN_SEV", "name": "Crushing chest pain radiating to arm or jaw", "category": "Cardiovascular symptoms", "body_part": "Chest", "is_red_flag": True, "default_weight": 10.0, "synonyms": "heavy chest pressure,tight squeezing chest pain,radiating to left arm"},
-    {"code": "CHEST_DISCOMFORT", "name": "Mild chest tightness or discomfort", "category": "Cardiovascular symptoms", "body_part": "Chest", "is_red_flag": False, "default_weight": 3.5, "synonyms": "chest tightness,dull ache in chest"},
+    {"code": "CHEST_PAIN_SEV", "name": "Crushing chest pain radiating to arm or jaw", "category": "Cardiovascular symptoms", "body_part": "Chest", "is_red_flag": True, "default_weight": 10.0, "synonyms": "heavy chest pressure,tight squeezing chest pain,radiating to left arm,heart pain,chest pain,pain in heart,pain in chest,pain in my heart,pain in my chest,cardiac pain,heart ache,heart hurting,heart hurts,chest hurting,angina,crushing chest pain,acute chest pain,left chest pain"},
+    {"code": "CHEST_DISCOMFORT", "name": "Mild chest tightness or discomfort", "category": "Cardiovascular symptoms", "body_part": "Chest", "is_red_flag": False, "default_weight": 3.5, "synonyms": "chest tightness,dull ache in chest,mild heart pain,chest ache,discomfort in chest,chest heaviness,tightness in heart,tightness in chest"},
     {"code": "PALP", "name": "Palpitations or rapid heartbeat", "category": "Cardiovascular symptoms", "body_part": "Heart", "is_red_flag": False, "default_weight": 2.5, "synonyms": "racing heart,fluttering heartbeat,tachycardia"},
     {"code": "ANKLE_SWELL", "name": "Swelling in ankles and feet", "category": "Cardiovascular symptoms", "body_part": "Legs/Ankles", "is_red_flag": False, "default_weight": 2.0, "synonyms": "pedal edema,swollen feet,puffy ankles"},
 
@@ -474,10 +474,26 @@ LOGICAL_RULES = [
     {
         "code": "RULE_CARDIAC_RED_FLAG",
         "rule_type": "propositional_red_flag",
-        "antecedent": {"and": ["CHEST_PAIN_SEV"]},
-        "consequent": {"action": "EMERGENCY_OVERRIDE", "alert": "Severe crushing chest pain detected. Suspected Acute Coronary Syndrome. Immediate 112 alert."},
+        "antecedent": {"or": ["CHEST_PAIN_SEV"]},
+        "consequent": {"action": "EMERGENCY_OVERRIDE", "alert": "Severe chest/heart pain detected. Suspected Acute Coronary Syndrome. Immediate 112 alert."},
         "weight": 10.0,
-        "description": "Propositional Rule: IF Severe Crushing Chest Pain THEN Immediate Emergency Override."
+        "description": "Propositional Rule: IF Severe Chest/Heart Pain THEN Immediate Emergency Override."
+    },
+    {
+        "code": "RULE_CARDIAC_COMBO_ROUTE",
+        "rule_type": "propositional_red_flag",
+        "antecedent": {"and": ["CHEST_DISCOMFORT", "SHORT_BREATH"]},
+        "consequent": {"action": "EMERGENCY_OVERRIDE", "alert": "Chest/heart discomfort paired with breathing difficulty detected. Urgent Cardiology/Emergency evaluation advised."},
+        "weight": 9.5,
+        "description": "Clinical Rule: IF Chest Discomfort AND Shortness of Breath THEN Route to Cardiologist / Urgent Triage."
+    },
+    {
+        "code": "RULE_CARDIAC_PALP_ROUTE",
+        "rule_type": "specialty_route",
+        "antecedent": {"or": ["CHEST_PAIN_SEV", "CHEST_DISCOMFORT", "PALP"]},
+        "consequent": {"specialty": "Cardiologist", "match_score": 96},
+        "weight": 5.0,
+        "description": "Specialist Routing: Any prominent chest pain, heart pain, or palpitations routes to Cardiologist."
     },
     {
         "code": "RULE_ANAPHYLAXIS_ALERT",

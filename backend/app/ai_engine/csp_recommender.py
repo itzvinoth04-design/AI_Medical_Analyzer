@@ -37,9 +37,9 @@ class CSPDoctorRecommender:
             if any(s in active_symptoms for s in ["SUD_WEAK", "FACE_DROP", "SPEECH_DIFF"]):
                 spec = "Neurologist"
                 reason = "CRITICAL EMERGENCY: Signs consistent with acute focal neurological deficit (Stroke FAST criteria). Immediate emergency hospital admission required."
-            elif any(s in active_symptoms for s in ["CHEST_PAIN_SEV"]):
+            elif any(s in active_symptoms for s in ["CHEST_PAIN_SEV", "CHEST_DISCOMFORT"]) or any(c.get("condition_code") == "COND_ACS_CARDIAC" for c in top_conditions):
                 spec = "Cardiologist"
-                reason = "CRITICAL EMERGENCY: Severe crushing chest pain signs indicate potential acute coronary syndrome. Immediate emergency cardiology/casualty evaluation required."
+                reason = "CRITICAL EMERGENCY: Severe chest or cardiac signs indicate potential acute coronary syndrome. Immediate emergency cardiology/casualty evaluation required."
             else:
                 spec = "General Physician"
                 reason = "CRITICAL EMERGENCY: Acute systemic distress requires immediate emergency medical department stabilization (Dial 112)."

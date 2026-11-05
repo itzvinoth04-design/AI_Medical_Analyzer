@@ -69,7 +69,7 @@ function App() {
     <AuthProvider>
       <AssessmentProvider>
         <Router>
-          <div className="flex flex-col min-h-screen bg-surface-bg text-primary">
+          <div className="flex flex-col min-h-screen text-primary relative">
             <Navbar />
             <main className="flex-1 w-full">
               <Routes>

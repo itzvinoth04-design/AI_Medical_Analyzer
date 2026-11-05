@@ -113,9 +113,6 @@ const HospitalDiscoveryPage = () => {
           <h1 className="text-2xl sm:text-3xl font-extrabold text-primary tracking-tight mt-1">
             Chennai Hospitals & Specialist Discovery
           </h1>
-          <p className="text-xs sm:text-sm text-primary/60 mt-1 max-w-2xl leading-relaxed">
-            Locate verified healthcare establishments across Chennai. Distances calculated via the Haversine formula with verified consultation fees and OPD hours.
-          </p>
         </div>
 
         <button

@@ -49,9 +49,6 @@ const DashboardPage = () => {
           <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
             Welcome, {user?.full_name || 'Patient'}
           </h1>
-          <p className="text-xs sm:text-sm text-surface-muted/80 max-w-xl">
-            Start a new clinical assessment or review your past consultation records and recommended doctors.
-          </p>
         </div>
 
         {/* Prominent CTA */}

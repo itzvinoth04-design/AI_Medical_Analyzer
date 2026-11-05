@@ -71,59 +71,37 @@ const LoginPage = () => {
               </div>
             </div>
 
-            <div className="space-y-2">
+            <div>
               <h3 className="text-xl font-extrabold tracking-tight leading-snug">
                 Intelligent Medical Symptom Analyzer
               </h3>
-              <p className="text-xs text-surface-muted/80 leading-relaxed">
-                Sign in to your private healthcare account to start assessments, review differential diagnostic reports, and find verified Chennai doctors.
-              </p>
-            </div>
-
-            {/* Platform Highlights */}
-            <div className="space-y-2 pt-2 border-t border-white/10 text-xs">
-              <div className="flex items-center gap-1.5 text-accent font-bold text-[11px] uppercase tracking-wider">
-                <BrainCircuit className="w-4 h-4" />
-                <span>Platform Highlights</span>
+              <div className="mt-4 flex flex-wrap gap-2 text-[11px] font-semibold">
+                <span className="px-3 py-1 rounded-lg bg-white/10 text-secondary-light border border-white/10">Clinical Triage</span>
+                <span className="px-3 py-1 rounded-lg bg-white/10 text-accent border border-white/10">Chennai Hospitals</span>
+                <span className="px-3 py-1 rounded-lg bg-white/10 text-white border border-white/10">Doctor Routing</span>
               </div>
-              <ul className="space-y-1.5 text-[11px] text-surface-muted/90">
-                <li className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-secondary-light shrink-0" />
-                  <span>Rule-Based & ML Clinical Triage</span>
-                </li>
-                <li className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-secondary-light shrink-0" />
-                  <span>Verified Chennai Hospital Directory</span>
-                </li>
-                <li className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-secondary-light shrink-0" />
-                  <span>Secure Confidential Patient Records</span>
-                </li>
-              </ul>
             </div>
           </div>
 
           <div className="relative z-10 pt-6 border-t border-white/10 text-[11px] text-surface-muted/60 space-y-1">
-            <div>Department of Computer Science & Engineering</div>
             <strong className="text-white block font-semibold">Rajalakshmi Engineering College (REC)</strong>
             <div className="text-accent">Vinoth S (240701592) & Team</div>
           </div>
         </div>
 
         {/* Right Form Card (7 cols) */}
-        <div className="md:col-span-7 p-8 sm:p-10 flex flex-col justify-center space-y-6">
+        <div className="md:col-span-7 p-8 sm:p-10 flex flex-col justify-center space-y-5">
           
-          <div className="space-y-1">
-            <span className="text-[11px] font-bold text-accent uppercase tracking-wider">Account Access</span>
-            <h2 className="text-2xl font-extrabold text-primary tracking-tight">Sign In to MediGuide AI</h2>
-            <p className="text-xs text-primary/60">Enter your credentials or choose a quick demo profile below.</p>
+          <div>
+            <h2 className="text-2xl font-extrabold text-primary tracking-tight">Sign In</h2>
+            <span className="text-[11px] font-bold text-accent uppercase tracking-wider">Access Clinical Dashboard</span>
           </div>
 
           {/* Quick-Fill One-Click Demo Buttons */}
-          <div className="p-3.5 rounded-2xl bg-surface-bg border border-surface-muted space-y-2">
+          <div className="p-3 rounded-2xl bg-surface-bg border border-surface-muted space-y-2">
             <span className="text-[11px] font-bold text-primary/70 flex items-center gap-1.5">
               <Sparkles className="w-3.5 h-3.5 text-secondary" />
-              <span>Instant Academic Demo Logins:</span>
+              <span>One-Click Demo Profiles:</span>
             </span>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               <button

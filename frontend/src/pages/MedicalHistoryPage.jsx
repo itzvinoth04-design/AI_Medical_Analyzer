@@ -71,11 +71,8 @@ const MedicalHistoryPage = () => {
         <div>
           <span className="text-xs font-bold text-accent uppercase tracking-wider">Confidential Health Archive</span>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-primary tracking-tight mt-1">
-            Consultation History & Reports
+            Consultation History
           </h1>
-          <p className="text-xs text-primary/60 mt-0.5">
-            Review past triage sessions, re-download clinical PDF summaries, or compare assessments over time
-          </p>
         </div>
 
         {selectedForCompare.length === 2 && (
